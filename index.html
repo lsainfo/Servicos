@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.S.A Informática - Serviços de Informática</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .service-card:hover {
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .form-input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <!-- Logo Section -->
+            <div class="mb-6">
+                <!-- Logo da L.S.A Informática -->
+                <div class="w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                    <img src="https://lh3.googleusercontent.com/d/1DApmbn01UMEhuJ5uXUF3SMq1DB8mxXjX" alt="Logo L.S.A Informática" class="w-full h-full object-contain rounded-2xl" onerror="this.parentElement.innerHTML='<svg class=\'w-16 h-16 text-white\' fill=\'currentColor\' viewBox=\'0 0 20 20\'><path fill-rule=\'evenodd\' d=\'M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z\' clip-rule=\'evenodd\'/></svg>'">
+                </div>
+            </div>
+            <!-- Digite aqui o nome da sua empresa -->
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">L.S.A Informática</h1>
+            <p class="text-xl md:text-2xl font-light opacity-90">Soluções completas para suas necessidades tecnológicas</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nossos Serviços</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Formatação de Computadores</h3>
+                    <p class="text-gray-600">Formatação completa, instalação do sistema operacional e programas essenciais.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                    <div class="text-green-600 mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Montagem de Computadores</h3>
+                    <p class="text-gray-600">Montagem personalizada de PCs para jogos, trabalho ou uso doméstico.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                    <div class="text-purple-600 mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Manutenção e Reparo</h3>
+                    <p class="text-gray-600">Diagnóstico e reparo de problemas de hardware e software.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                    <div class="text-red-600 mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Instalação de Software</h3>
+                    <p class="text-gray-600">Instalação e configuração de programas, antivírus e atualizações.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                    <div class="text-yellow-600 mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Backup e Recuperação</h3>
+                    <p class="text-gray-600">Backup de dados importantes e recuperação de arquivos perdidos.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"/>
+                            <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-1v-1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Consultoria Técnica</h3>
+                    <p class="text-gray-600">Orientação para compra de equipamentos e soluções personalizadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Solicite seu Orçamento</h2>
+                    <p class="text-lg text-gray-600">Preencha o formulário abaixo e entraremos em contato em até 24 horas</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <form action="https://formspree.io/f/myzpdwbq" method="POST" id="serviceForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Nome Completo *</label>
+                                <input type="text" name="nome" required class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none transition-all" placeholder="Seu nome completo">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Telefone *</label>
+                                <input type="tel" name="telefone" required class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none transition-all" placeholder="(47) 9 9999-9999">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">E-mail *</label>
+                            <input type="email" name="email" required class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none transition-all" placeholder="seu@email.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Serviço Desejado *</label>
+                            <select name="servico" required class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none transition-all">
+                                <option value="">Selecione o serviço</option>
+                                <option value="formatacao">Formatação de Computador</option>
+                                <option value="montagem">Montagem de Computador</option>
+                                <option value="manutencao">Manutenção e Reparo</option>
+                                <option value="software">Instalação de Software</option>
+                                <option value="backup">Backup e Recuperação</option>
+                                <option value="consultoria">Consultoria Técnica</option>
+                                <option value="outro">Outro serviço</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Urgência</label>
+                            <div class="grid grid-cols-3 gap-4">
+                                <label class="flex items-center">
+                                    <input type="radio" name="urgency" value="baixa" class="mr-2 text-blue-600">
+                                    <span class="text-sm">Baixa</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="urgency" value="media" class="mr-2 text-blue-600" checked>
+                                    <span class="text-sm">Média</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="urgency" value="alta" class="mr-2 text-blue-600">
+                                    <span class="text-sm">Alta</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Descrição do Problema/Necessidade *</label>
+                            <textarea name="descricao" required rows="4" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none transition-all resize-none" placeholder="Descreva detalhadamente o que você precisa..."></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Endereço (para atendimento domiciliar)</label>
+                            <input type="text" name="endereco" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none transition-all" placeholder="Rua, número, bairro, cidade">
+                        </div>
+
+                        <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                            <p class="text-sm text-green-800">
+                                <strong>✅ Formulário Configurado:</strong> Este formulário está pronto para enviar os dados diretamente para seu email através do Formspree. Basta configurar seu Form ID!
+                            </p>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+                            Enviar Solicitação
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8 text-center">
+                <div>
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-8 h-8 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Telefone</h3>
+                    <p class="text-gray-600">(47) 9 9733-1906</p>
+                </div>
+                
+                <div>
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-8 h-8 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">E-mail</h3>
+                    <p class="text-gray-600">lsainfo.informatica@gmail.com</p>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-medium mb-2">L.S.A Informática</p>
+            <p class="opacity-80">Soluções tecnológicas com qualidade e confiança</p>
+        </div>
+    </footer>
+
+    <script>
+        // Phone number formatting
+        document.querySelector('input[type="tel"]').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length >= 11) {
+                value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+            } else if (value.length >= 7) {
+                value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+            } else if (value.length >= 3) {
+                value = value.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+            }
+            e.target.value = value;
+        });
+
+        // Formspree form submission feedback
+        document.getElementById('serviceForm').addEventListener('submit', function(e) {
+            const button = e.target.querySelector('button[type="submit"]');
+            button.textContent = 'Enviando...';
+            button.disabled = true;
+            
+            // Re-enable button after a delay (Formspree will handle the actual submission)
+            setTimeout(() => {
+                button.textContent = 'Enviar Solicitação';
+                button.disabled = false;
+            }, 3000);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'968edb9d95d682e2',t:'MTc1NDE1MTE1Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
