@@ -40,30 +40,39 @@
             transition: all 0.3s ease;
         }
         
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        /* Fundo azul-marinho com textura de circuitos igual ao da logo */
+        .circuit-bg {
+            background-color: #071732;
+            background-image: 
+                radial-gradient(circle at 50% 40%, rgba(30, 58, 138, 0.35) 0%, rgba(7, 23, 50, 0.95) 85%),
+                url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%231e40af' stroke-width='1.5' stroke-opacity='0.28'%3E%3Cpath d='M0 30 H45 L65 50 H115 L135 30 H180'/%3E%3Cpath d='M0 130 H35 L55 110 H125 L145 130 H180'/%3E%3Cpath d='M45 0 V20 L65 40 V80 L45 100 V180'/%3E%3Cpath d='M135 0 V40 L115 60 V120 L135 140 V180'/%3E%3Ccircle cx='65' cy='50' r='3' fill='%23071732'/%3E%3Ccircle cx='115' cy='50' r='3' fill='%23071732'/%3E%3Ccircle cx='55' cy='110' r='3' fill='%23071732'/%3E%3Ccircle cx='125' cy='110' r='3' fill='%23071732'/%3E%3Ccircle cx='65' cy='80' r='2.5' fill='%231e40af'/%3E%3Ccircle cx='115' cy='120' r='2.5' fill='%231e40af'/%3E%3C/g%3E%3C/svg%3E");
+            background-size: cover, 220px 220px;
         }
         
         .form-input:focus {
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
         }
     </style>
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
-    <header class="gradient-bg text-white py-16">
+    <header class="circuit-bg text-white py-14 md:py-20 border-b border-blue-950">
         <div class="container mx-auto px-6 text-center">
             <!-- Logo Section -->
-            <div class="mb-6">
-                <!-- Logo da L.S.A Informática -->
-                <div class="w-32 h-32 mx-auto mb-6 flex items-center justify-center">
-                    <img src="https://lh3.googleusercontent.com/d/1DApmbn01UMEhuJ5uXUF3SMq1DB8mxXjX" alt="Logo L.S.A Informática" class="w-full h-full object-contain rounded-2xl" onerror="this.parentElement.innerHTML='<svg class=\'w-16 h-16 text-white\' fill=\'currentColor\' viewBox=\'0 0 20 20\'><path fill-rule=\'evenodd\' d=\'M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z\' clip-rule=\'evenodd\'/></svg>'">
-                </div>
+            <div class="max-w-xs sm:max-w-sm md:max-w-md mx-auto mb-4 flex items-center justify-center">
+                <img src="https://lh3.googleusercontent.com/d/1wcAc620E73sOfHRf-UReNMARpMyJ0F8L" 
+                     alt="L.S.A Informática - Manutenção de Computadores e Notebooks" 
+                     class="w-full h-auto object-contain rounded-2xl"
+                     onerror="this.style.display='none'; document.getElementById('fallback-title').classList.remove('hidden');">
             </div>
-            <!-- Digite aqui o nome da sua empresa -->
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">L.S.A Informática</h1>
-            <p class="text-xl md:text-2xl font-light opacity-90">Soluções completas para suas necessidades tecnológicas</p>
+
+            <!-- Título reserva caso a imagem falhe ao carregar -->
+            <h1 id="fallback-title" class="hidden text-4xl md:text-5xl font-bold mb-4">L.S.A Informática</h1>
+            
+            <p class="text-lg md:text-2xl font-light text-blue-100 opacity-95 mt-2">
+                Soluções completas para suas necessidades tecnológicas
+            </p>
         </div>
     </header>
 
@@ -212,9 +221,7 @@
                             <input type="text" name="endereco" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none transition-all" placeholder="Rua, número, bairro, cidade">
                         </div>
 
-
-
-                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+                        <button type="submit" class="w-full bg-gradient-to-r from-[#0a234d] to-indigo-600 text-white font-semibold py-4 px-6 rounded-lg hover:from-[#071732] hover:to-indigo-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
                             Enviar Solicitação
                         </button>
                     </form>
@@ -228,7 +235,7 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-8 text-center">
                 <div>
-                    <div class="text-blue-600 mb-4">
+                    <div class="text-blue-700 mb-4">
                         <svg class="w-8 h-8 mx-auto" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                         </svg>
@@ -238,7 +245,7 @@
                 </div>
                 
                 <div>
-                    <div class="text-blue-600 mb-4">
+                    <div class="text-blue-700 mb-4">
                         <svg class="w-8 h-8 mx-auto" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
@@ -247,8 +254,6 @@
                     <h3 class="font-semibold text-gray-800 mb-2">E-mail</h3>
                     <p class="text-gray-600">lsainfo.informatica@gmail.com</p>
                 </div>
-                
-
             </div>
         </div>
     </section>
@@ -271,10 +276,10 @@
     </div>
 
     <!-- Footer -->
-    <footer class="gradient-bg text-white py-8">
+    <footer class="circuit-bg text-white py-8 border-t border-blue-950">
         <div class="container mx-auto px-6 text-center">
             <p class="text-lg font-medium mb-2">L.S.A Informática</p>
-            <p class="opacity-80">Soluções tecnológicas com qualidade e confiança</p>
+            <p class="text-blue-200 opacity-80">Soluções tecnológicas com qualidade e confiança</p>
         </div>
     </footer>
 
@@ -308,5 +313,5 @@
             }, 3000);
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96920c316040e967',t:'MTc1NDE4NDYwNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
